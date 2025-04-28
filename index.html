@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colombo HCI Lab</title>
+
+  <!-- Mavo -->
+  <link rel="stylesheet" href="https://get.mavo.io/mavo.css">
+  <script src="https://get.mavo.io/mavo.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body mv-app="colombohcilab" mv-storage="data/index.json">
+
+  <!-- Header -->
+  <header class="main-header d-flex align-items-center p-3">
+    <div class="logo me-3">
+      <img src="images/logo.png" alt="Colombo HCI Lab Logo" class="img-fluid" style="width: 80px;">
+    </div>
+    <div class="header-text">
+      <h1 class="mb-0">Colombo HCI Lab</h1>
+      <h2 class="h5">University of Colombo School of Computing</h2>
+    </div>
+
+    <!-- Burger icon for mobile -->
+    <button class="nav-toggle ms-auto" aria-label="Open navigation" onclick="toggleNav()">☰</button>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar" id="mainNav">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="career.html">Careers</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- Main Content -->
+  <main class="container my-5">
+
+    <!-- Welcome Section -->
+    <section class="mb-5 text-center">
+
+    <!-- Banner Section with Carousel -->
+<section class="banner">
+  <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/banner1.jpg" class="d-block w-100" alt="UCSC Image 1" style="height: 400px; object-fit: cover;">
+      </div>
+      <div class="carousel-item">
+        <img src="images/banner2.jpg" class="d-block w-100" alt="UCSC Image 2" style="height: 400px; object-fit: cover;">
+      </div>
+      <div class="carousel-item">
+        <img src="images/banner3.jpg" class="d-block w-100" alt="UCSC Image 3" style="height: 400px; object-fit: cover;">
+      </div>
+    </div>
+
+    <!-- Add carousel controls (arrows) if you want -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+    <!-- Add indicators (small dots) -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Text overlay -->
+    <div class="carousel-caption d-none d-md-block">
+      <h1 class="display-4 fw-bold text-white">University of Colombo School of Computing</h1>
+      <h2 class="h4 text-white">Welcome to Colombo HCI Lab of UCSC</h2>
+    </div>
+  </div>
+</section>
+
+   <!-- What We Do Section -->
+<section class="container my-5">
+  <div class="row align-items-center">
+    <!-- Text Side -->
+    <div class="col-md-6 mb-4 mb-md-0">
+      <h2 style="font-size: 2.5rem; font-weight: 700; color: #2c3e50;">What We Do</h2>
+      <p style="font-size: 1.1rem; color: #555; line-height: 1.8;">
+        In the HCI lab at UCSC, we're working on exciting research in Human-Computer Interaction. 
+        Our team is involved in a Google-funded project where we're exploring the impact of AI and developing interventions 
+        to address its potential harms. By focusing on user needs, testing new ways to interact with technology, and ensuring our designs are practical, we aim to create technologies that improve everyday life.</p>
+    </div>
+
+    <!-- Image Collage Side -->
+    <div class="col-md-6">
+      <div class="row g-2 shadow p-2 rounded" style="background: #fff;">
+        <div class="col-6">
+          <img src="images/img1.jpg" alt="Image 1" class="img-fluid rounded">
+        </div>
+        <div class="col-6">
+          <img src="images/img2.jpg" alt="Image 2" class="img-fluid rounded">
+        </div>
+        <div class="col-6">
+          <img src="images/img3.jpg" alt="Image 3" class="img-fluid rounded">
+        </div>
+        <div class="col-6">
+          <img src="images/img4.jpg" alt="Image 4" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Events Section ->
+    <section>
+      <h2 class="mb-4">Upcoming Events</h2>
+      <ul class="list-group" id="event-list">
+        <!-- Mavo loops through events ->
+        <li class="list-group-item" mv-multiple property="events">
+          <h4 property="name"></h4>
+          <p><strong>Date:</strong> <span property="date"></span></p>
+          <p property="description"></p>
+          <p id="event-status"></p> <!-- For displaying status like "X days left" or "Event finished Y days ago" -->
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-black text-center py-3">
+    <div class="container">
+      <small>© 2025 Colombo HCI Lab | University of Colombo School of Computing</small><br>
+      <small>All Rights Reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+
+  <script>
+    // Function to calculate the difference between dates
+    function calculateEventStatus(eventDate) {
+      const currentDate = new Date();
+      const eventDateObj = new Date(eventDate);
+      const timeDiff = eventDateObj - currentDate;
+      const daysDiff = Math.floor(timeDiff / (1000 * 3600 * 24));
+
+      // Determine if the event is upcoming or passed
+      if (daysDiff > 0) {
+        return `${daysDiff} days left`;
+      } else if (daysDiff === 0) {
+        return 'Event is today!';
+      } else {
+        return `Event finished ${Math.abs(daysDiff)} days ago`;
+      }
+    }
+
+    // Function to update event status dynamically
+    function updateEventStatus() {
+      const eventItems = document.querySelectorAll("#event-list .list-group-item");
+
+      eventItems.forEach(item => {
+        const eventDate = item.querySelector("span[property='date']").innerText;
+        const statusText = calculateEventStatus(eventDate);
+        const statusElement = item.querySelector("#event-status");
+        statusElement.innerText = statusText;
+      });
+    }
+
+    // Ensure event status is updated after Mavo renders the data
+    document.addEventListener("DOMContentLoaded", function () {
+      updateEventStatus();
+    });
+  </script>
+  
+</body>
+
+</html>
