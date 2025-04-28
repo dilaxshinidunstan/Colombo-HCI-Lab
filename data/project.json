@@ -1,0 +1,20 @@
+{
+    "projects": [
+      {
+        "name": "Project 1",
+        "image": "images/project1.jpg",
+        "description": "This is a detailed description of Project 1. It discusses the goals, outcomes, and technologies used in the project."
+      },
+      {
+        "name": "Project 2",
+        "image": "images/project2.jpg",
+        "description": "This is a detailed description of Project 2. It explains the project's objectives, implementation, and results."
+      },
+      {
+        "name": "Project 3",
+        "image": "images/project3.jpg",
+        "description": "Project 3 explores innovative solutions to common challenges. Here's an overview of the project's work and contributions."
+      }
+    ]
+  }
+  

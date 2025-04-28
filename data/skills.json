@@ -1,0 +1,45 @@
+{
+    "skills": [
+      {
+        "icon": "🎨",
+        "name": "User Experience (UX) Design",
+        "description": "Designing user-friendly interfaces to enhance usability and satisfaction."
+      },
+      {
+        "icon": "🧪",
+        "name": "Usability Testing",
+        "description": "Conducting research to evaluate a product's user-friendliness and find improvements."
+      },
+      {
+        "icon": "🤝",
+        "name": "Interaction Design",
+        "description": "Creating intuitive ways for users to interact with products or systems."
+      },
+      {
+        "icon": "🧠",
+        "name": "Human-Centered AI",
+        "description": "Building AI systems that align with human values and needs."
+      },
+      {
+        "icon": "🕶️",
+        "name": "Augmented Reality (AR) Interfaces",
+        "description": "Designing interfaces that integrate virtual elements into the real world."
+      },
+      {
+        "icon": "🧠",
+        "name": "Cognitive Psychology",
+        "description": "Understanding mental processes to inform design decisions."
+      },
+      {
+        "icon": "♿",
+        "name": "Accessibility Design",
+        "description": "Making sure products are usable by people of all abilities and disabilities."
+      },
+      {
+        "icon": "📊",
+        "name": "Data Visualization",
+        "description": "Presenting data clearly and effectively through visual storytelling."
+      }
+    ]
+  }
+  
