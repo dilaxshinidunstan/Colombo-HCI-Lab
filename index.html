@@ -48,12 +48,9 @@
   <!-- Main Content -->
   <main class="container my-5">
 
-    <!-- Welcome Section -->
-    <section class="mb-5 text-center">
-
     <!-- Banner Section with Carousel -->
 <section class="banner">
-  <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+  <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="images/banner1.jpg" class="d-block w-100" alt="UCSC Image 1" style="height: 400px; object-fit: cover;">
@@ -123,22 +120,7 @@
   </div>
 </section>
 
-
-    <!-- Events Section ->
-    <section>
-      <h2 class="mb-4">Upcoming Events</h2>
-      <ul class="list-group" id="event-list">
-        <!-- Mavo loops through events ->
-        <li class="list-group-item" mv-multiple property="events">
-          <h4 property="name"></h4>
-          <p><strong>Date:</strong> <span property="date"></span></p>
-          <p property="description"></p>
-          <p id="event-status"></p> <!-- For displaying status like "X days left" or "Event finished Y days ago" -->
-        </li>
-      </ul>
-    </section>
-
-  </main>
+</main>
 
   <!-- Footer -->
   <footer class="text-black text-center py-3">
@@ -154,42 +136,6 @@
   <!-- Custom JS -->
   <script src="js/main.js"></script>
 
-  <script>
-    // Function to calculate the difference between dates
-    function calculateEventStatus(eventDate) {
-      const currentDate = new Date();
-      const eventDateObj = new Date(eventDate);
-      const timeDiff = eventDateObj - currentDate;
-      const daysDiff = Math.floor(timeDiff / (1000 * 3600 * 24));
-
-      // Determine if the event is upcoming or passed
-      if (daysDiff > 0) {
-        return `${daysDiff} days left`;
-      } else if (daysDiff === 0) {
-        return 'Event is today!';
-      } else {
-        return `Event finished ${Math.abs(daysDiff)} days ago`;
-      }
-    }
-
-    // Function to update event status dynamically
-    function updateEventStatus() {
-      const eventItems = document.querySelectorAll("#event-list .list-group-item");
-
-      eventItems.forEach(item => {
-        const eventDate = item.querySelector("span[property='date']").innerText;
-        const statusText = calculateEventStatus(eventDate);
-        const statusElement = item.querySelector("#event-status");
-        statusElement.innerText = statusText;
-      });
-    }
-
-    // Ensure event status is updated after Mavo renders the data
-    document.addEventListener("DOMContentLoaded", function () {
-      updateEventStatus();
-    });
-  </script>
-  
 </body>
 
 </html>
