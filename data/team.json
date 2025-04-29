@@ -1,15 +1,13 @@
 {
     "bannerDescription": "We are a passionate group of researchers working together to advance the field of Human-Computer Interaction.",
     "director": {
-      "name": "Prof. John Doe",
-      "qualifications": "PhD in HCI, University of Colombo",
+      "name": "Dr.D.A.S.Atukorale ",
       "photo": "images/director.png",
       "linkedin": "https://www.linkedin.com/in/johndoe",
       "email": "mailto:john.doe@example.com"
     },
     "supervisor": {
       "name": "Dr. Dilrukshi Gamage",
-      "qualifications": "PhD in Computer Science, University of Colombo",
       "photo": "images/supervisor.png",
       "linkedin": "https://www.linkedin.com/in/janesmith",
       "email": "mailto:jane.smith@example.com"
@@ -17,30 +15,26 @@
     "researchAssistants": [
       {
         "name": "Dilki Sewwandi",
-        "qualifications": "MSc in AI, University of Colombo",
         "photo": "images/ra.png",
         "linkedin": "https://www.linkedin.com/in/michaelbrown",
         "email": "mailto:michael.brown@example.com"
       },
       {
         "name": "Dilaxshini Dunstan",
-        "qualifications": "MSc in Data Science, University of Colombo",
         "photo": "images/ra.png",
-        "linkedin": "https://www.linkedin.com/in/sarahjohnson",
-        "email": "mailto:sarah.johnson@example.com"
+        "linkedin": "https://www.linkedin.com/in/dilaxshini-dunstan",
+        "email": "mailto:dilaxshini16dunstan@gmail.com"
       }
     ],
     "volunteers": [
       {
         "name": "Volunteer01",
-        "qualifications": "BSc in IT, University of Colombo",
         "photo": "images/ra.png",
         "linkedin": "https://www.linkedin.com/in/emilydavis",
         "email": "mailto:emily.davis@example.com"
       },
       {
         "name": "Volunteer02",
-        "qualifications": "BSc in Computer Science, University of Colombo",
         "photo": "images/ra.png",
         "linkedin": "https://www.linkedin.com/in/daniellee",
         "email": "mailto:daniel.lee@example.com"

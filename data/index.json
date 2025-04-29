@@ -1,20 +1,4 @@
 {
-  "researchAreas": [
-    { "title": "Interactive Design", "description": "Study of user-centric interface development." },
-    { "title": "Human-AI Interaction", "description": "Exploration of how humans interact with AI systems." }
-  ],
-  "events": [
-    {
-      "name": "AI & Deepfake Awareness",
-      "date": "2025-04-22",
-      "details": "This event will focus on the latest advancements in AI interventions and how to prevent deepfakes in digital media."
-    },
-    {
-      "name": "HCI for Education",
-      "date": "2025-05-15",
-      "details": "Exploring user-friendly learning platforms for children."
-    }
-  ],
 
     "whatWeDo": {
       "title": "What We Do",
