@@ -71,6 +71,7 @@
         <a property="email" href="">Email</a>
       </div>
     </div>
+    
 
     <div property="supervisor" class="team-member">
       <img property="photo" src="" alt="Supervisor Photo">
@@ -90,7 +91,7 @@
   
     <!-- Research Assistants Section -->
     <div property="researchAssistants" mv-multiple class="team-row">
-      <div class="team-member">
+      
         <img property="photo" src="" alt="Research Assistant Photo">
         <div class="member-info">
           <h3 property="name"></h3>
@@ -101,14 +102,14 @@
           <a property="email" href="">Email</a>
         </div>
       </div>
-    </div>
+    
 
       <!-- Separator Line -->
   <hr class="separator">
   
     <!-- Volunteers Section -->
   <div property="volunteers" mv-multiple class="team-row">
-    <div class="team-member">
+    
       <img property="photo" src="" alt="Volunteer Photo">
       <div class="member-info">
         <h3 property="name"></h3>
@@ -144,7 +145,12 @@
     .then(data => console.log(data)) // Log to the console
     .catch(error => console.error('Error loading team.json:', error));
 });
-
+  </script>
+  <script>
+    function toggleNav() {
+  const nav = document.getElementById("mainNav");
+  nav.classList.toggle("open");
+}
   </script>
 </body>
 

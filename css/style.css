@@ -236,9 +236,9 @@ footer {
 /* Team Member Layout */
 #team .team-row {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap; /* Ensure wrapping if screen is too small */
-  gap: 20px; /* Space between team members */
+  gap: 100px; /* Space between team members */
   margin-bottom: 40px; /* Space between rows */
 }
 
