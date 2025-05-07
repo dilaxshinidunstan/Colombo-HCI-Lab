@@ -38,12 +38,12 @@ h1, h2, h4, h5 {
   align-items: center;
   justify-content: space-between;
   padding: 15px 30px;
-  background: #8d8e8f;
+  background: #ffffff;
   color: rgb(0, 0, 0);
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-bottom: 3px solid #b22222;
+  border-bottom: 3px solid #000000;
 }
 
 .logo img {
@@ -84,7 +84,7 @@ h1, h2, h4, h5 {
 }
 
 .nav-menu a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
@@ -100,27 +100,7 @@ h1, h2, h4, h5 {
   background: none;
   border: none;
   font-size: 28px;
-  color: white;
-}
-
-/* Dropdown */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background: #8b8b8b;
-  padding: 10px;
-  border-radius: 5px;
-  top: 30px;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content a {
-  display: block;
-  margin-bottom: 5px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 
@@ -142,12 +122,13 @@ section h2 {
 
 /* ====== Footer ====== */
 footer {
-  background: #8d8e8f;
+  background: #ffffff;
   position: relative;
   bottom: 0;
   width: 100%;
   padding: 10px;
   color: rgb(0, 0, 0);
+  border-top: 3px solid #000000;
 }
 
 /* ====== Responsive ====== */
@@ -188,17 +169,6 @@ footer {
   }
 }
 
-/* Career Skill Cards */
-.skill-card {
-  transition: transform 0.3s ease;
-  background-color: #ffffff;
-  border-radius: 12px;
-}
-
-.skill-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
-}
 
 /* Stylish symbol */
 .icon-symbol {
@@ -236,9 +206,9 @@ footer {
 /* Team Member Layout */
 #team .team-row {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap; /* Ensure wrapping if screen is too small */
-  gap: 20px; /* Space between team members */
+  gap: 100px; /* Space between team members */
   margin-bottom: 40px; /* Space between rows */
 }
 
