@@ -19,74 +19,12 @@
 
 <body mv-app="colombohcilab" mv-storage="data/index.json">
 
-  <!-- Header -->
-  <header class="main-header d-flex align-items-center p-3">
-    <div class="logo me-3">
-      <img src="images/logo.png" alt="Colombo HCI Lab Logo" class="img-fluid" style="width: 80px;">
-    </div>
-    <div class="header-text">
-      <h1 class="mb-0">Colombo HCI Lab</h1>
-      <h2 class="h5">University of Colombo School of Computing</h2>
-    </div>
-
-    <!-- Burger icon for mobile -->
-    <button class="nav-toggle ms-auto" aria-label="Open navigation" onclick="toggleNav()">☰</button>
-
-    <!-- Navigation Menu -->
-    <nav class="navbar" id="mainNav">
-      <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="career.html">Careers</a></li>
-        <li><a href="team.html">Our Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Header place holder-->
+  <div id="header-placeholder"></div>
 
 
   <!-- Main Content -->
   <main class="container my-5">
-
-    <!-- Banner Section with Carousel -->
-<section class="banner">
-  <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/banner1.jpg" class="d-block w-100" alt="UCSC Image 1" style="height: 400px; object-fit: cover;">
-      </div>
-      <div class="carousel-item">
-        <img src="images/banner2.jpg" class="d-block w-100" alt="UCSC Image 2" style="height: 400px; object-fit: cover;">
-      </div>
-      <div class="carousel-item">
-        <img src="images/banner3.jpg" class="d-block w-100" alt="UCSC Image 3" style="height: 400px; object-fit: cover;">
-      </div>
-    </div>
-
-    <!-- Add carousel controls (arrows) if you want -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-
-    <!-- Add indicators (small dots) -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-
-    <!-- Text overlay -->
-    <div class="carousel-caption d-none d-md-block">
-      <h1 class="display-4 fw-bold text-white">University of Colombo School of Computing</h1>
-      <h2 class="h4 text-white">Welcome to Colombo HCI Lab of UCSC</h2>
-    </div>
-  </div>
-</section>
 
    <!-- What We Do Section -->
 <section class="container my-5">
@@ -122,13 +60,8 @@
 
 </main>
 
-  <!-- Footer -->
-  <footer class="text-black text-center py-3">
-    <div class="container">
-      <small>© 2025 Colombo HCI Lab | University of Colombo School of Computing</small><br>
-      <small>All Rights Reserved.</small>
-    </div>
-  </footer>
+  <!-- Footer  placeholder-->
+  <div id="footer-placeholder"></div>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -136,6 +69,24 @@
   <!-- Custom JS -->
   <script src="js/main.js"></script>
 
+  
+  <script>
+    //load header
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+
+    //load footer
+    fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    });  
+
+
+</script>
 </body>
 
 </html>

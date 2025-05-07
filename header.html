@@ -6,43 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="main-header">
-        <div class="logo">
-          <img src="images/logo.png" alt="Colombo HCI Lab Logo" class="img-fluid" style="width: 80px;">
-        </div>
-        <div class="header-text">
-          <h1>Colombo HCI Lab</h1>
-          <h2>University of Colombo School of Computing</h2>
-        </div>
-      
-        <!-- Burger icon for mobile -->
-        <button class="nav-toggle" aria-label="Open navigation" onclick="toggleNav()">☰</button>
-      
-        <!-- Navigation Menu -->
-        <nav class="navbar" id="mainNav">
-          <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-              <a href="project.html">Projects</a>
-              <div class="dropdown-content">
-                <a href="#">Ongoing Projects</a>
-                <a href="#">Completed Projects</a>
-                <a href="#">Research Areas</a>
-              </div>
-            </li>
-            <li><a href="career.html">Careers</a></li>
-            <li class="dropdown">
-              <a href="team.html">Our Team</a>
-              <div class="dropdown-content">
-                <a href="#">Faculty</a>
-                <a href="#">Students</a>
-                <a href="#">Alumni</a>
-              </div>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+    <!-- Header -->
+  <header class="main-header d-flex align-items-center p-3">
+    <div class="logo me-3">
+      <img src="images/logo.png" alt="Colombo HCI Lab Logo" class="img-fluid" style="width: 80px;">
+    </div>
+    <div class="header-text">
+      <h1 class="mb-0">Colombo HCI Lab</h1>
+    </div>
+
+    <!-- Burger icon for mobile -->
+    <button class="nav-toggle ms-auto" aria-label="Open navigation" onclick="toggleNav()">☰</button>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar" id="mainNav">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
       
 </body>
 </html>
