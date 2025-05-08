@@ -94,9 +94,28 @@
     .then(data => {
       document.getElementById('footer-placeholder').innerHTML = data;
     });  
-
-
 </script>
+<script>
+  // Wait until the header is loaded
+  document.addEventListener('DOMContentLoaded', function () {
+    // Give the browser a moment to insert the header
+    setTimeout(function () {
+      // Get current page filename
+      var path = window.location.pathname.split('/').pop();
+      if (path === "") path = "index.html"; // Default to index.html if root
+
+      // Find all nav links
+      var navLinks = document.querySelectorAll('.nav-menu .nav-link');
+      navLinks.forEach(function(link) {
+        var href = link.getAttribute('href');
+        if (href === path) {
+          link.parentElement.classList.add('active');
+        }
+      });
+    }, 100); // Adjust delay if needed
+  });
+</script>
+
 </body>
 
 </html>
