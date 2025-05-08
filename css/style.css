@@ -222,7 +222,7 @@ footer {
   justify-content: center;
   flex-wrap: wrap; /* Ensure wrapping if screen is too small */
   gap: 100px; /* Space between team members */
-  margin-bottom: 40px; /* Space between rows */
+  margin-bottom: 60px; /* Space between rows */
 }
 
 #team .team-member {
@@ -238,6 +238,7 @@ footer {
   height: auto;
   border-radius: 50%;
   transition: opacity 0.3s ease;
+
 }
 
 #team .member-info {
@@ -281,6 +282,15 @@ footer {
 .team-icons a:hover {
   background: #0077b5;
   color: #fff;
+}
+.team-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  background: #eee;
 }
 
 
