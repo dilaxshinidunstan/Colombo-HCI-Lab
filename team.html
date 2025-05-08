@@ -15,6 +15,9 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!--For the icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
 </head>
 
 <body mv-app="colombohcilab" mv-storage="data/team.json">
@@ -35,77 +38,81 @@
   <h2 class="lead" property="bannerDescription" mv-edit-text>
     <!-- The description will auto-load here -->
   </h2>
+    <!--Members Section-->
 
-  <!-- Leadership Section  -->
-  <section id="team" class="text-center">
-    <h1>Meet Our Team</h1>
+    <!-- Font Awesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Director + Supervisor Section -->
-    <div class="team-row">
-    <div property="director" class="team-member">
-      <img property="photo" src="" alt="Director Photo">
-      <div class="member-info">
-        <h2 property="name"></h2>
-        <p property="qualifications"></p>
-      </div>
-      <div class="overlay">
-        <a property="linkedin" href="">LinkedIn</a>
-        <a property="email" href="">Email</a>
-      </div>
-    </div>
-    
-
-    <div property="supervisor" class="team-member">
-      <img property="photo" src="" alt="Supervisor Photo">
-      <div class="member-info">
-        <h2 property="name"></h2>
-        <p property="qualifications"></p>
-      </div>
-      <div class="overlay">
-        <a property="linkedin" href="">LinkedIn</a>
-        <a property="email" href="">Email</a>
-      </div>
-    </div>
-  
-
-  <!-- Separator Line -->
-  <hr class="separator">
-  
-    <!-- Research Assistants Section -->
-    <div property="researchAssistants" mv-multiple class="team-row">
-      
-        <img property="photo" src="" alt="Research Assistant Photo">
-        <div class="member-info">
-          <h3 property="name"></h3>
-          <p property="qualifications"></p>
-        </div>
-        <div class="overlay">
-          <a property="linkedin" href="">LinkedIn</a>
-          <a property="email" href="">Email</a>
+<section id="team" class="text-center">
+  <h1>Join with us!</h1>
+  <p property="bannerDescription"></p>
+  <h2>Members</h2>
+  <div class="container">
+    <div class="row justify-content-center">
+      <!-- Director -->
+      <div class="col-md-3 col-sm-6 mb-4" property="director">
+        <div class="card team-card">
+          <img class="card-img-top rounded" property="photo" src="" alt="Director Photo">
+          <div class="card-body">
+            <h5 class="card-title" property="name"></h5>
+            <p class="card-text">Director</p>
+            <div class="team-icons">
+              <a property="linkedin" href="" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+              <a property="email" href=""><i class="fas fa-envelope fa-2x"></i></a>
+              <a property="github" href="" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+          </div>
         </div>
       </div>
-    
-
-      <!-- Separator Line -->
-  <hr class="separator">
-  
-    <!-- Volunteers Section -->
-  <div property="volunteers" mv-multiple class="team-row">
-    
-      <img property="photo" src="" alt="Volunteer Photo">
-      <div class="member-info">
-        <h3 property="name"></h3>
-        <p property="qualifications"></p>
+      <!-- Supervisor -->
+      <div class="col-md-3 col-sm-6 mb-4" property="supervisor">
+        <div class="card team-card">
+          <img class="card-img-top rounded" property="photo" src="" alt="Supervisor Photo">
+          <div class="card-body">
+            <h5 class="card-title" property="name"></h5>
+            <p class="card-text">Supervisor</p>
+            <div class="team-icons">
+              <a property="linkedin" href="" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+              <a property="email" href=""><i class="fas fa-envelope fa-2x"></i></a>
+              <a property="github" href="" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="overlay">
-        <a property="linkedin" href="">LinkedIn</a>
-        <a property="email" href="">Email</a>
+      <!-- Research Assistants -->
+      <div mv-multiple property="researchAssistants" class="col-md-3 col-sm-6 mb-4">
+        <div class="card team-card">
+          <img class="card-img-top rounded" property="photo" src="" alt="Research Assistant Photo">
+          <div class="card-body">
+            <h5 class="card-title" property="name"></h5>
+            <p class="card-text">Research Assistant</p>
+            <div class="team-icons">
+              <a property="linkedin" href="" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+              <a property="email" href=""><i class="fas fa-envelope fa-2x"></i></a>
+              <a property="github" href="" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Volunteers -->
+      <div mv-multiple property="volunteers" class="col-md-3 col-sm-6 mb-4">
+        <div class="card team-card">
+          <img class="card-img-top rounded" property="photo" src="" alt="Volunteer Photo">
+          <div class="card-body">
+            <h5 class="card-title" property="name"></h5>
+            <p class="card-text">Volunteer</p>
+            <div class="team-icons">
+              <a property="linkedin" href="" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+              <a property="email" href=""><i class="fas fa-envelope fa-2x"></i></a>
+              <a property="github" href="" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  
   </div>
-</div>
 </section>
+
   
 
   <!-- Footer placeholder -->
@@ -141,6 +148,27 @@
   nav.classList.toggle("open");
 }
   </script>
+  <script>
+    // Wait until the header is loaded
+    document.addEventListener('DOMContentLoaded', function () {
+      // Give the browser a moment to insert the header
+      setTimeout(function () {
+        // Get current page filename
+        var path = window.location.pathname.split('/').pop();
+        if (path === "") path = "index.html"; // Default to index.html if root
+  
+        // Find all nav links
+        var navLinks = document.querySelectorAll('.nav-menu .nav-link');
+        navLinks.forEach(function(link) {
+          var href = link.getAttribute('href');
+          if (href === path) {
+            link.parentElement.classList.add('active');
+          }
+        });
+      }, 100); // Adjust delay if needed
+    });
+  </script>
+  
 </body>
 
 </html>

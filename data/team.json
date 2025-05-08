@@ -1,44 +1,49 @@
 {
-    "bannerDescription": "We are excited to introduce our team with you and happy to hear from motivated and passionate students and researchers who want to join and collaborate with us!",
-    "director": {
-      "name": "Dr.D.A.S.Atukorale ",
-      "photo": "images/director.png",
-      "linkedin": "https://www.linkedin.com/in/johndoe",
-      "email": "mailto:john.doe@example.com"
+  "bannerDescription": "We are excited to introduce our team with you and happy to hear from motivated and passionate students and researchers who want to join and collaborate with us!",
+  "director": {
+    "name": "Dr.D.A.S.Atukorale",
+    "photo": "images/director.png",
+    "linkedin": "https://www.linkedin.com/in/johndoe",
+    "email": "mailto:john.doe@example.com",
+    "github": "https://github.com/johndoe"
+  },
+  "supervisor": {
+    "name": "Dr. Dilrukshi Gamage",
+    "photo": "images/supervisor.png",
+    "linkedin": "https://www.linkedin.com/in/janesmith",
+    "email": "mailto:jane.smith@example.com",
+    "github": "https://github.com/janesmith"
+  },
+  "researchAssistants": [
+    {
+      "name": "Dilki Sewwandi",
+      "photo": "images/ra.png",
+      "linkedin": "https://www.linkedin.com/in/michaelbrown",
+      "email": "mailto:michael.brown@example.com",
+      "github": "https://github.com/michaelbrown"
     },
-    "supervisor": {
-      "name": "Dr. Dilrukshi Gamage",
-      "photo": "images/supervisor.png",
-      "linkedin": "https://www.linkedin.com/in/janesmith",
-      "email": "mailto:jane.smith@example.com"
+    {
+      "name": "Dilaxshini Dunstan",
+      "photo": "images/RA_jpg",
+      "linkedin": "https://www.linkedin.com/in/dilaxshini-dunstan",
+      "email": "mailto:dilaxshini16dunstan@gmail.com",
+      "github": "https://github.com/dilaxshini-dunstan"
+    }
+  ],
+  "volunteers": [
+    {
+      "name": "Volunteer01",
+      "photo": "images/ra.png",
+      "linkedin": "https://www.linkedin.com/in/emilydavis",
+      "email": "mailto:emily.davis@example.com",
+      "github": "https://github.com/emilydavis"
     },
-    "researchAssistants": [
-      {
-        "name": "Dilki Sewwandi",
-        "photo": "images/ra.png",
-        "linkedin": "https://www.linkedin.com/in/michaelbrown",
-        "email": "mailto:michael.brown@example.com"
-      },
-      {
-        "name": "Dilaxshini Dunstan",
-        "photo": "images/ra.png",
-        "linkedin": "https://www.linkedin.com/in/dilaxshini-dunstan",
-        "email": "mailto:dilaxshini16dunstan@gmail.com"
-      }
-    ],
-    "volunteers": [
-      {
-        "name": "Volunteer01",
-        "photo": "images/ra.png",
-        "linkedin": "https://www.linkedin.com/in/emilydavis",
-        "email": "mailto:emily.davis@example.com"
-      },
-      {
-        "name": "Volunteer02",
-        "photo": "images/ra.png",
-        "linkedin": "https://www.linkedin.com/in/daniellee",
-        "email": "mailto:daniel.lee@example.com"
-      }
-    ]
-  }
-  
+    {
+      "name": "Volunteer02",
+      "photo": "images/ra.png",
+      "linkedin": "https://www.linkedin.com/in/daniellee",
+      "email": "mailto:daniel.lee@example.com",
+      "github": "https://github.com/daniellee"
+    }
+  ]
+}
