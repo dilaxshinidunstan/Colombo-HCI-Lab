@@ -12,7 +12,7 @@ body {
 }
 
 h1, h2, h4, h5 {
-  color: #003366;
+  color: #000000;
 }
 
 /* ====== Main Content ====== */
@@ -35,72 +35,70 @@ h1, h2, h4, h5 {
 /* ====== Header ====== */
 .main-header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: center; /* Vertically align logo and text */
+  justify-content: flex-start;
   padding: 15px 30px;
   background: #ffffff;
-  color: rgb(0, 0, 0);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
   border-bottom: 3px solid #000000;
 }
 
 .logo img {
-  height: 80px;
+  height: 120px;
 }
 
-.header-text {
-  flex-grow: 1;
-  margin-left: 40px;
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* Center header text and nav horizontally */
+  flex: 1;                  /* Take remaining space after logo */
 }
 
 .header-text h1 {
   margin: 0;
-  font-size: 28px;
-}
-
-.header-text h2 {
-  margin: 5px 0 0;
-  font-size: 18px;
-  font-weight: normal;
+  font-size: 45px;
+  text-align: center;
 }
 
 /* Navigation */
 .navbar {
-  flex-shrink: 0;
+ margin-top: 5px;
 }
 
 .nav-menu {
   list-style: none;
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 2;
+  justify-content: center; /* Center nav items horizontally */
 }
 
 .nav-menu li {
-  margin-left: 20px;
-  position: relative;
+  margin: 0 10px;
+  border-radius: 12px; /* Rounded rectangle */
+  padding: 6px 12px; /* Padding inside the rounded rectangle */
+  transition: border 0.3s ease;
 }
 
 .nav-menu a {
   color: rgb(0, 0, 0);
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
+  display: block; /* Make anchor fill the li for better click area */
+  border-radius: 12px; /* Rounded rectangle */
+  padding: 6px 12px; /* Padding inside the rounded rectangle */
 }
 
 .nav-menu a:hover {
   color: #f83737;
 }
 
-/* Burger Icon */
-.nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 28px;
-  color: rgb(0, 0, 0);
+/* Active nav tab with black border rounded rectangle */
+.nav-menu li.active {
+  border: 2px solid black;
+}
+
+.nav-menu li.active a {
+  color: black;
 }
 
 
@@ -163,43 +161,26 @@ footer {
     margin: 10px 0;
   }
 
-  .nav-toggle {
-    display: block;
-    margin-left: auto;
-  }
 }
 
-
-/* Stylish symbol */
-.icon-symbol {
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(135deg, #6f42c1, #007bff);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
 
 /* ====== Banner Section ====== */
 #banner {
-  background: linear-gradient(135deg, #6c8ea4, #a7bed3, #f7f7f7);
+  background:#a7a6a6;
   color: rgb(12, 12, 12);
-  padding: 80px 20px;
+  padding:480px 40px;
   text-align: center;
 }
 
 #banner h1 {
-  font-size: 48px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
-#banner h2 {
-  font-size: 20px;
+#main h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 /* ====== Team Section ====== */
