@@ -4,15 +4,13 @@
     "name": "Dr.D.A.S.Atukorale",
     "photo": "images/director.png",
     "linkedin": "https://www.linkedin.com/in/johndoe",
-    "email": "mailto:john.doe@example.com",
-    "github": "https://github.com/johndoe"
+    "email": "mailto:aja@ucsc.cmb.ac.lk",
   },
   "supervisor": {
     "name": "Dr. Dilrukshi Gamage",
-    "photo": "images/supervisor.png",
+    "photo": "images/supervisor.jpg",
     "linkedin": "https://www.linkedin.com/in/janesmith",
-    "email": "mailto:jane.smith@example.com",
-    "github": "https://github.com/janesmith"
+    "email": "mailto:dgs@ucsc.cmb.ac.lk",
   },
   "researchAssistants": [
     {
