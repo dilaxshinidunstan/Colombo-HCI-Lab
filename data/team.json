@@ -10,17 +10,17 @@
   "supervisor": {
     "name": "Dr. Dilrukshi Gamage",
     "photo": "images/supervisor.png",
-    "linkedin": "https://www.linkedin.com/in/janesmith",
-    "email": "mailto:jane.smith@example.com",
-    "github": "https://github.com/janesmith"
+    "linkedin": "https://www.linkedin.com/in/dilrukshigamage/",
+    "email": "mailto:dilrukshi.gamage@gmail.com",
+    "github": "https://github.com/"
   },
   "researchAssistants": [
     {
       "name": "Dilki Sewwandi",
-      "photo": "images/ra.png",
-      "linkedin": "https://www.linkedin.com/in/michaelbrown",
-      "email": "mailto:michael.brown@example.com",
-      "github": "https://github.com/michaelbrown"
+      "photo": "images/RA_1.png",
+      "linkedin": "https://www.linkedin.com/in/dilki-sewwandi",
+      "email": "mailto:dsewwandi2001@gmail.com",
+      "github": "https://github.com/dilkiSewwandi"
     },
     {
       "name": "Dilaxshini Dunstan",
